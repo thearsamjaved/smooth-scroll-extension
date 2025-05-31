@@ -7,7 +7,7 @@ A Chrome extension that provides automated smooth scrolling with customizable ti
 - **🕐 Customizable Timing**: Set scroll duration from 1 second to 1 hour (3600 seconds)
 - **🎯 Smart Auto-Scroll**: Automatically scrolls from current position to bottom of page
 - **⏸️ Intelligent Pause/Resume**: Automatically pauses when user interacts (wheel, touch, scrollbar) and resumes when interaction stops
-- **📱 Mobile Support**: Touch-friendly with gesture detection
+- **📱 Tablet Mode Support**: Touch-friendly with gesture detection
 - **💾 Settings Persistence**: Saves your preferred scroll duration
 - **🎮 Easy Controls**: Simple start/stop interface with real-time status
 - **⚡ Performance Optimized**: Uses requestAnimationFrame for smooth 60fps animations
