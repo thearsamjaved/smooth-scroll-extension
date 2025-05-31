@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            width: 250px;
+            height: 200px;
+            margin: 0;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            border-radius: 8px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .save-section {
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        
+        .save-btn {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .save-btn:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .time-section {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .time-label {
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .time-input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .control-btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+        }
+        
+        .start-btn {
+            background-color: #4CAF50;
+        }
+        
+        .start-btn:hover {
+            background-color: #45a049;
+        }
+        
+        .stop-btn {
+            background-color: #f44336;
+        }
+        
+        .stop-btn:hover {
+            background-color: #da190b;
+        }
+        
+        .status {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="save-section">
+            <button class="save-btn" id="saveBtn">Save Value</button>
+        </div>
+        
+        <div class="time-section">
+            <label class="time-label" for="scrollTime">Scroll Time in Seconds:</label>
+            <input type="number" id="scrollTime" class="time-input" value="30" min="1" max="3600">
+        </div>
+        
+        <div class="controls">
+            <button class="control-btn start-btn" id="startBtn">Start</button>
+            <button class="control-btn stop-btn" id="stopBtn">Stop</button>
+        </div>
+        
+        <div class="status" id="status">Ready</div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
